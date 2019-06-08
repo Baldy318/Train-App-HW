@@ -1,0 +1,37 @@
+body {
+  background-image: url(https://www.metoffice.gov.uk/binaries/content/gallery/metofficegovuk/hero-images/weather/cloud/cumulus-cloud.jpg)
+}
+
+.jumbotron{
+  background-image: url(https://cannabisnow.com/wp-content/uploads/2014/11/NYCoped@2x.jpg);
+}
+
+.card{
+  background-color:white;
+}
+#heading {
+  font-family: Times;
+  font-weight: bold;
+}
+
+.text-center{
+  text-align: center;
+}
+
+
+.panel-title {
+  font-weight: bold;
+  text-align: center !important;
+}
+
+.train-table{
+  text-align: center !important;
+}
+
+.text-color{
+ text-emphasis: bold;
+
+}
+td {
+  font-weight: bold;
+}

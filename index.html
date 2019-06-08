@@ -1,0 +1,109 @@
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <title>SkyLine Express</title>
+  
+  <!--Bootstrap CSS-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  
+  <!--CSS-->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+ 
+</head>
+
+<body>
+  <div class="container">
+    
+    <!--Title of Page Including Current Time-->
+    <div class="jumbotron">
+      <h1 class="text-center" id="heading">SkyLine Express</h1>
+      <p class="text-center" id="currentTime"></p>
+    </div>
+    
+    <!-- Train Schedule Container with Rows-->
+    <div class="row">
+      <div class="col-xs-12 col-sm-9 card">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Train Schedule</h3>
+          </div>
+          <div class="panel-body">
+            <table class="table table-hover card" id="train-table">
+              <thead>
+                <tr>
+                  <td id="trainName">Train Name</td>
+                  <td>Destination</td>
+                  <td class="text-center">Frequency</td>
+                  <td class="text-center">Next Arrival</td>
+                  <td class="text-center">Minutes Away</td>
+                  <td class="text-center">Remove</td>
+                </tr>
+              </thead>
+              <tbody id="train-table-rows">
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!--To submit a new train/schedule-->
+      <div class="col-xs-12 col-sm-3">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Add New Train</h3>
+            <div>
+              
+              <div class="panel-body">
+                <form>
+                  
+                  <div class="form-group">
+                    <label class="text-color"><strong> Name</label>
+                    <input type="text" class="form-control form-field" id="train-name">
+                  </div>
+                  
+                  <div class="form-group">
+                    <label class="text-color">Destination</label>
+                    <input type="text" class="form-control form-field" id="destination">
+                  </div>
+                  
+                  <div class="form-group">
+                    <label class="text-color">First Train Time: HH:MM - Military Time</label>
+                    <input type="text" class="form-control form-field" id="first-train">
+                  </div>
+                  
+                  <div class="form-group">
+                    <label class="text-color">Frequency (min)</label>
+                    <input type="text" class="form-control form-field" id="frequency">
+                  </div>
+
+                  <button type="submit" class="btn btn-default" id="submit">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+     <!-- Bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <!-- Firebase References -->
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+
+  <!-- Moment.js Reference -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+
+<!--Javascript Reference-->
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+
+
+</body>
+
+</html>
